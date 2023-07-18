@@ -1,0 +1,19 @@
+\subsection{Ship scale models}
+\label{sec:ship_scale_models}
+The data was collected with two scale models of the wPCC ship. The smaller 5m model with scale factor 1:41 was used in the laboratory experiments in RISE Maritime Dynamics Laboratory (MDL) (https://www.sspa.se/). The larger 7m geosim model with scale factor 1:30 was used in the field data experiments, conducted in a sheltered sea environment in the Stockholm archipelago. The main particulars of the two models are shown in \autoref{tab:main_particulars}. The two models are almost geometrically similar. The only exceptions are that the rudders of the 7m models are slightly more to the aft (5 cm) and that the propeller geometries are different.
+\begin{table}[!ht]
+    \centering
+    \caption{Main particulars of the 5m and 7m scale models.}
+    \label{tab:main_particulars}
+    \pgfplotstabletypeset[col sep=comma,
+        columns={Particular,Unit,5m,7m},
+        columns/Particular/.style={string type},
+        columns/Unit/.style={string type},
+        columns/5m/.style={string type},
+        columns/7m/.style={string type},
+        column type=l,	% specify the align method
+        every head row/.style={before row=\hline,after row=\hline},	% style the first row
+        every last row/.style={after row=\hline},	% style the last row
+    ]{tables/ship_main_particulars_main_particulars.csv"}
+
+\end{table}
