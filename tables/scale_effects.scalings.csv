@@ -1,0 +1,16 @@
+Physical quantity,SI unit,Prime system,Froude scaling
+length,$m$,$L$,$\lambda$
+volume,$m^3$,$L^{3}$,$\lambda^{3}$
+mass,$kg$,$\frac{L^{3} \rho}{2}$,$\lambda^{3}$
+density,$kg/m^3$,$\frac{\rho}{2}$,$1$
+inertia moment,$kg \cdot m^2$,$\frac{L^{5} \rho}{2}$,$\lambda^{5}$
+time,$s$,$\frac{L}{U}$,$\sqrt{\lambda}$
+frequency,$1/s$,$\frac{U}{L}$,$\frac{1}{\sqrt{\lambda}}$
+area,$m^2$,$L^{2}$,$\lambda^{2}$
+angle,$rad$,$1$,$1$
+linear velocity,$m/s$,$U$,$\sqrt{\lambda}$
+angular velocity,$rad/s$,$\frac{U}{L}$,$\frac{1}{\sqrt{\lambda}}$
+linear acceleration,$m/s^2$,$\frac{U^{2}}{L}$,$1$
+angular acceleration,$rad/s^2$,$\frac{U^{2}}{L^{2}}$,$\frac{1}{\lambda}$
+force,$N$,$\frac{L^{2} U^{2} \rho}{2}$,$\lambda^{3}$
+moment,$Nm$,$\frac{L^{3} U^{2} \rho}{2}$,$\lambda^{4}$

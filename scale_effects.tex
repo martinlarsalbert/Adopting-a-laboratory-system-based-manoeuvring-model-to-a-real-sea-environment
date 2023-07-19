@@ -1,7 +1,28 @@
-\subsection{Scale effects}
+\subsection{Scaling}
 \label{sec:scale_effects}
-\begin{figure}[h!]
-    \includegraphics[width=\linewidth]{../../notebooks/figures/acceleration_prediction_error.png}
-    \caption{Roll decay estimation with identified cubic, quadratic, and linear models.}
-    \label{fig:roll_decay_compare}
-\end{figure}
+Scaling procedures need to be applied in order to relate the results from the smaller 5m model to the larger 7m model. The prime system and Froude scaling are used in this paper. The prime system can be used to express the results and ship main particulars in nondimesional units. This system can be used to relate the forces and moments and to create nondimesional mathematical models that can be used for both the 5m and 7m models. The Froude scaling is applied for surface ships \citep{ittc_ittc_2008} to scale the 5m results to 7m scale in SI units. The Froude scaling between the 5m and 7m models is shown in \autoref{eq:froude_scaling}.
+\begin{equation}
+    \label{eq:froude_scaling}
+    \begin{split}
+        L_{7m} = L_{5m} \cdot \lambda \\
+        V_{7m} = V_{5m} \cdot \sqrt{\lambda}
+    \end{split}
+\end{equation}
+The scale factor $\lambda=1.373$ in this case, since the 7m is that much longer. The prime system and Froude scaling are summarized in \autoref{tab:scalings} where the prime system column contains the multiplication factor from prime system to SI units. The Froude scaling column contains the multiplication factor from model scale to full scale.
+
+\begin{table}[!ht]
+    \centering
+    \caption{Scalings with prime system and Froude scaling.}
+    \label{tab:scalings}
+    \pgfplotstabletypeset[col sep=comma,
+        columns={Physical quantity,SI unit,Prime system,Froude scaling},
+        columns/SI unit/.style={string type},
+        columns/Physical quantity/.style={string type},
+        columns/Prime system/.style={string type},
+        columns/Froude scaling/.style={string type},
+        column type=l,	% specify the align method
+        every head row/.style={before row=\hline,after row=\hline},	% style the first row
+        every last row/.style={after row=\hline},	% style the last row
+    ]{tables/scale_effects.scalings.csv"}
+\end{table}
+
