@@ -1,0 +1,8 @@
+\subsection{System based models}\label{sec:models}
+Different system based models are developed in this paper, where the models all belong to the same general modular model as described in \autoref{eq:X}-\autoref{eq:N}.
+\input{equations/models.X}
+\input{equations/models.Y}
+\input{equations/models.N}
+The general model is similar to the MMG model \citep{yasukawa_introduction_2015} where modular contributions from hull, propellers, and rudders are denoted by the subscripts: H, P, and R. Contributions from wind forces have also been added to this model, with subscript W. The uniqueness of each model lies in how the submodules are defined and combined. There may be several hull submodule $H_1$, $H_2$, …, $H_N$ and several propeller models etc. The models are named from their submodules, e.g. $H_1P_1R_1W_1$ is a model consisting of the hull submodule 1, propeller submodule 1 etc. The full model name also contains the name of the dataset used to identify the parameters, e.g. $H_1P_1R_1W_1.MDL$ has hydrodynamic derivatives identified with inverse dynamics regression on the MDL data. The submodules used, and the parameter identifications are described below.
+\subsection{Hull models}\label{sec:hull_models}
+
